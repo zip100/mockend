@@ -1,32 +1,14 @@
 {
-	"Post": {
-		"title": {
-			"string": {}
-		},
-		"nickname": {
-			"string": {}
-		},
-		"title2": {
-			"loremWords": {
-				"minLength": 5,
-				"maxLength": 20
-			}
-		},
-		"comments": {
-			"hasMany": "Comment"
-		},
-		"author": {
-			"belongsTo": "User"
-		}
-	},
-	"User": {
-		"username": {
-			"string": {}
-		}
-	},
-	"Comment": {
-		"content": {
-			"string": {}
-		}
-	}
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
