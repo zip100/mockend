@@ -23,5 +23,9 @@
 		"username": {
 			"string": {}
 		}
+	},
+	"Comment": {
+		"content': {
+		"string": {}
 	}
 }
